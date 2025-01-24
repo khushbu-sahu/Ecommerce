@@ -1,0 +1,196 @@
+
+.pardiv{
+    width: 80%;
+    margin: auto;
+   
+   }
+
+   .pardiv h1{
+    text-align: center;
+    margin: 30px;
+   }
+    
+   .card{
+      margin: 20px
+   
+   }  
+    .cards{
+      
+       width: 99%;
+       margin: auto;
+       display: grid;
+       grid-template-columns:auto auto auto  ;
+       gap: 60px;
+          
+    }
+    .card ul {
+      padding: 15px;
+      text-align: center;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 4px 4px 8px 0px black;
+      background-color: #F7E7CE; /* Matching light background */
+      border-radius: 8px; /* Smooth rounded corners */
+      transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .card ul:hover {
+      box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+      transform: scale(1.02); /* Slightly enlarges the element */
+      background-color: #FAE0A4; /* Slightly darker shade for hover */
+  }
+  
+
+    .card ul button{
+        padding: 10px;
+        margin: 5px 70px;
+        border: none;
+        border-radius: 5px;
+    background-color: #FAF3E0; /* Soft Beige */
+    color: #4B3621;
+    box-shadow: 1px 1px 3px 0px black;
+      
+    }
+
+    /* .hero-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    } */
+
+    .hero-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        margin-top: 100px; /* Adjust based on navbar height */
+    }
+    
+    
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /* Default opacity */
+        transition: background 0.5s ease-in-out; /* Smooth transition */
+    }
+    
+    .hero-container:hover .hero-overlay {
+        background: rgba(0, 0, 0, 0.8); /* Darker effect on hover */
+    }
+    
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        z-index: 2; /* Ensures text appears above the overlay */
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: left;
+        z-index: 2;
+        max-width: 500px;
+    }
+    
+    .hero-text p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    
+    .hero-text span {
+        color: #FFD700;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    @media screen and (max-width: 768px) {
+        .hero-text {
+            left: 5%;
+            font-size: 1.8rem;
+        }
+    
+        .hero-text p {
+            font-size: 1rem;
+        }
+    
+        .hero-text span {
+            font-size: 2rem;
+        }
+    }
+    
+    
+/* 
+    .hero-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    }
+    
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity */
+    /* } */
+    
+    /* .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        z-index: 2; 
+    } */
+    
+    @media screen and (max-width:550px){
+     
+      
+       .cards{
+           width:99%;
+           margin:auto;
+           display:grid;
+           grid-template-columns: auto auto;
+           gap: 30px;
+           
+       }
+       .cards img{
+           width:50px
+       }
+   
+    }
